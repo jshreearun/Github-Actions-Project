@@ -56,7 +56,7 @@ jobs:
       run: mvn test
 
   build_project:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     needs: test
     steps:
     - uses: actions/checkout@v4
